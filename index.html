@@ -7,10 +7,11 @@
     <title>Review | MediGo</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <div class="navcontainer">
             <div class="flex">
                 <a href="#" class="title">MediGo</a>
@@ -21,7 +22,7 @@
                 <a href="#" class="button">Sign up</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <div class="search-bar">
         <div class="container">
             <div class="flex">
@@ -32,10 +33,10 @@
         </div>
     </div>
 
-    <!-- Location and Rating -->
+    <!-- Hospital Name, Location and Rating -->
     <div class="container cards-container">
         <div class="card">
-            <img src="./pic/parul_sewashram.jpg" alt="Hospital Image" class="card-image">
+            <img src="./pic/Parul_Sewashram.png" alt="Hospital Image" class="card-image">
             <h2>Parul Sewashram Hospital</h2>
             <p>Vadodara, Guj, India</p>
             <div class="rating">
@@ -72,7 +73,7 @@
         <!-- Review Section -->
         <div class="comments-grid">
             <!-- Card 1 -->
-            <div class="comment-card">
+            <div class="comment-card" onmouseover="reviewCard">
                 <img src="./pic/person/suraj.png" alt="Reviewer Image" class="reviewer-image">
                 <div class="comment-content">
                     <h4>Suraj Gaud</h4>
@@ -159,6 +160,8 @@
                 <span class="comment-date">15/01/2023</span>
             </div>
         </div>
+            <button class="see-more">See more</button>
+        <div></div>
     </div>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="./css/navbarStyle.css">
+</head>
+<body class="background light-text">
+    <div class="navbar">
+        <nav class="container">
+            <!-- <button id="mobile-menu-button" class="menu-button">
+                SVG for menu icon
+            </button> -->
+            <img class="logo" src="https://placehold.co/128x64" alt="Medical Company Logo">
+            <div class="nav-links" id="navbar">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Medicine</a>
+                <a href="#" class="nav-link">Clinic Info</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const navbar = document.getElementById('navbar');
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
