@@ -10,24 +10,12 @@
 </head>
 
 <body>
-    <!-- <nav>
-        <div class="navcontainer">
-            <div class="flex">
-                <a href="#" class="title">MediGo</a>
-                <a href="#" class="link">Contact</a>
-                <a href="#" class="link">About</a>
-                <a href="#" class="link">Pricing</a>
-                <a href="#" class="button">Sign in</a>
-                <a href="#" class="button">Sign up</a>
-            </div>
-        </div>
-    </nav> -->
     <div class="search-bar">
         <div class="container">
             <div class="flex">
-                <input type="text" placeholder="Search" class="search-input">
+                <input type="text" placeholder="Search Hospital" class="hospital-search-input">
                 <a href="#" class="link">Find More Hospital</a>
-                <a href="#" class="link">Compare</a>
+                <a href="#" class="link">Compare Hospital</a>
             </div>
         </div>
     </div>
@@ -45,8 +33,8 @@
                 <span class="rating-number">5.3</span>
             </div>
             <div class="msg-contact-card-actions">
-                <button class="msg-contact-action-btn" id="msg-action-btn">Send Message</button>
-                <button class="msg-contact-action-btn" id="contact-action-btn">Contact</button>
+                <button class="msg-action-btn" id="msgActionBtn">Send Message</button>
+                <button class="contact-action-btn" id="contactActionBtn">Contact</button>
             </div>
         </div>
 
@@ -60,17 +48,17 @@
     <!-- Search, Filter & Sort -->
     <div class="container comments-section">
         <div class="search-comments">
-            <input type="text" placeholder="Search Comments" class="search-input">
-            <select class="filter-select">
-                <option>Filter</option>
-                <option>Name</option>
-                <option>Review</option>
+            <input type="text" placeholder="Search Comments" class="comment-search-input">
+            <select class="search-by-select">
+                <option id="none">Search By</option>
+                <option id="searchByReviewerName">Name</option>
+                <option id="searchByReview">Review</option>
             </select>
-            <select class="sort-select">
-                <option>Sort By</option>
-                <option>Latest</option>
-                <option>Name</option>
-                <option>Rating</option>
+            <select class="sort-by-select">
+                <option id="none">Sort By</option>
+                <option id="sortByLatestReview">Latest</option>
+                <option id="sortByReviewerName">Name</option>
+                <option id="sortByRating">Rating</option>
             </select>
         </div>
 
@@ -164,16 +152,10 @@
                 <span class="comment-date">15/01/2023</span>
             </div>
         </div>
-        <!-- <button id="loadMoreBtn" class="load-more-btn">Load More</button> -->
         <button id="loadMoreBtn" class="load-more-btn">Load More</button>
-
-<!-- 
-        <div class="load-more" id="load-more">
-            <button class="load-more-btn" id="load-more-btn">Load more</button>
-        </div> -->
     </div>
 
     <script type="text/javascript" src="./js/script.js"></script>
-
+   
 </body>
 </html>

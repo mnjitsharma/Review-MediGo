@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(270deg, rgba(110, 133, 178, 0.581), rgba(255, 255, 255, 0.357));
+    background: linear-gradient(270deg, rgba(110, 133, 178, 0.581), rgba(131, 94, 94, 0.403));
     box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.75);
     backdrop-filter: blur(80px);
     padding: 0 16px;
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 }
 
 .logo {
@@ -30,11 +31,11 @@
 
 .nav-link {
     display: block;
-    padding: 16px;
+    padding: 7px;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 8px;
     transition: background-color 0.3s;
 }
 
@@ -45,13 +46,21 @@
 .menu-button {
     display: none;
     cursor: pointer;
+    padding: 7px;
+    /* color: #fff; */
+    border-radius: 8px;
+    border:none;
+    background-color: lightgreen;
+    transition: background-color 0.3s;
+    box-shadow: rgba(255,255,255,0.9) -2px -2px 2px,rgba(163, 163, 163, 0.9) 2px 2px 2px;
+
     /* I have to add some style here */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .menu-button {
         display: block;
-        order: 3;
+        order: 7;
     }
     
     .nav-links {
