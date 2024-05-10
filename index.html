@@ -7,7 +7,6 @@
     <title>Review | MediGo</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
-    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
 <body>
@@ -45,9 +44,9 @@
                 <span class="rating-stars"><img src="./pic/icons/Stars.png" alt="rating" width="90px"></span>
                 <span class="rating-number">5.3</span>
             </div>
-            <div class="card-actions">
-                <button class="action-btn">Send Message</button>
-                <button class="action-btn">Contact</button>
+            <div class="msg-contact-card-actions">
+                <button class="msg-contact-action-btn" id="msg-action-btn">Send Message</button>
+                <button class="msg-contact-action-btn" id="contact-action-btn">Contact</button>
             </div>
         </div>
 
@@ -64,9 +63,14 @@
             <input type="text" placeholder="Search Comments" class="search-input">
             <select class="filter-select">
                 <option>Filter</option>
+                <option>Name</option>
+                <option>Review</option>
             </select>
             <select class="sort-select">
                 <option>Sort By</option>
+                <option>Latest</option>
+                <option>Name</option>
+                <option>Rating</option>
             </select>
         </div>
 
@@ -160,8 +164,16 @@
                 <span class="comment-date">15/01/2023</span>
             </div>
         </div>
-            <button class="see-more">See more</button>
-        <div></div>
+        <!-- <button id="loadMoreBtn" class="load-more-btn">Load More</button> -->
+        <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+
+<!-- 
+        <div class="load-more" id="load-more">
+            <button class="load-more-btn" id="load-more-btn">Load more</button>
+        </div> -->
     </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
 </body>
 </html>

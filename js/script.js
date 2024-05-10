@@ -31,3 +31,33 @@ filterSelect.addEventListener('change', function() {
     let filter = filterSelect.value;
     // Implement your filter logic here
 });
+
+
+// to handle the Load More functionality
+let currentIndex = 0;
+const cardsToShow = 3;
+let totalCards = 8;
+
+function showMoreCards() {
+  const cards = document.querySelectorAll('.comment-card');
+
+  const nextIndex = Math.min(cards.length, currentIndex + cardsToShow);
+
+  for (let i = currentIndex; i < nextIndex; i++) {
+    cards[i].style.display = 'flex';
+  }
+
+  currentIndex = nextIndex;
+
+  if (currentIndex >= cards.length) {
+    document.getElementById('loadMoreBtn').disabled = true;
+  }
+}
+
+document.querySelectorAll('.comment-card').forEach(card => {
+  card.style.display = 'none';
+});
+
+showMoreCards();
+
+document.getElementById('loadMoreBtn').addEventListener('click', showMoreCards);
