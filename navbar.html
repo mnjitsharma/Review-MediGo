@@ -9,9 +9,10 @@
 <body class="background light-text">
     <div class="navbar">
         <nav class="container">
-            <!-- <button id="mobile-menu-button" class="menu-button">
-                SVG for menu icon
-            </button> -->
+            <button id="mobile-menu-button" class="menu-button">
+                <!-- SVG for menu icon -->
+                Menu
+            </button>
             <img class="logo" src="https://placehold.co/128x64" alt="Medical Company Logo">
             <div class="nav-links" id="navbar">
                 <a href="#" class="nav-link">Home</a>
@@ -24,12 +25,16 @@
     </div>
 
     <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const navbar = document.getElementById('navbar');
+        // const menuButton = document.getElementById('mobile-menu-button');
+        // const navbar = document.getElementById('navbar');
 
-        menuButton.addEventListener('click', () => {
-            navbar.classList.toggle('hidden');
-        });
+        // menuButton.addEventListener('click', () => {
+        //     navbar.classList.toggle('hidden');
+        // });
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+    document.getElementById('navbar').classList.toggle('active');
+});
+
     </script>
 </body>
 </html>

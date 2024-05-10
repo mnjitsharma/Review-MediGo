@@ -1,38 +1,71 @@
 .navbar {
-    box-shadow: 0 10px 15px -3px rgba(60, 54, 54, 0.306);
-    background-color: #6680d3;
-    border-radius: 0.375rem;
-    max-width: auto;
+    background: linear-gradient(270deg, rgba(110, 133, 178, 0.581), rgba(255, 255, 255, 0.357));
+    box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.75);
+    backdrop-filter: blur(80px);
+    padding: 0 16px;
 }
 
 .container {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    height: 2rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1;
 }
 
 .nav-links {
-    flex-wrap: wrap;
-    display: flex;    
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-grow: 2;
 }
 
 .nav-link {
-    padding: 0.75rem;
-    border-radius: 0.375rem;
+    display: block;
+    padding: 16px;
+    color: #fff;
     text-decoration: none;
-    color: black;
-    font-size: 0.875rem;
-    align-self: center;
-    font-weight: 500;
+    text-align: center;
+    border-radius: 30px;
+    transition: background-color 0.3s;
 }
 
-.nav-link:hover, .nav-link:focus {
-    background-color: #bfdbfe;
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+    /* I have to add some style here */
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        order: 3;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        /* I have to add some style here */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo {
+        order: 1;
+    }
 }
